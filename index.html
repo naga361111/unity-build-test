@@ -9,12 +9,34 @@
 </head>
 
 <body>
-  <div>
-    <img src="public/potanity_logo.png" alt="potanity_logo" class="logo_img">
+  <div class="navBar-container">
+    <div class="logo-container">
+      <img src="public/potanity_logo.png" alt="potanity_logo" class="logo-img">
+    </div>
+    <div class="navBar-center">
+      <div class="navBar-items">
+        <p class="items">Games</p>
+        <p class="items">About</p>
+        <p class="items">Contact</p>
+      </div>
+      <div class="navBar-line"></div>
+    </div>
+    <div class="logo-container">
+      <img src="public/potanity_logo.png" alt="potanity_logo" class="logo-img">
+    </div>
+    <!-- <div class="navBar-main">
+
+    </div> -->
   </div>
 
-  <canvas id="unity-canvas" width=960 height=600 tabindex="-1"
-    style="width: 960px; height: 600px; background: #231F20"></canvas>
+  <div class="unity-container">
+    <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+  </div>
+
+  <div style="height: 20rem;">
+    a
+  </div>
+
   <script src="Build/unity-build.loader.js"></script>
   <script>
     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
