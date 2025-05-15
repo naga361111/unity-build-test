@@ -15,9 +15,9 @@
     </div>
     <div class="navBar-center">
       <div class="navBar-items">
-        <p class="items">Games</p>
-        <p class="items">About</p>
-        <p class="items">Contact</p>
+        <p class="items" id="games-nav">Games</p>
+        <p class="items" id="about-nav">About</p>
+        <p class="items" id="contact-nav">Contact</p>
       </div>
       <div class="navBar-line"></div>
     </div>
@@ -30,7 +30,7 @@
     <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
   </div>
 
-  <div style="height: 20rem;"></div>
+  <div style="height: 20rem;" id="games-target"></div>
 
   <div class="game-title">
     Experience Our Games
@@ -93,6 +93,45 @@
     </div>
   </div>
 
+  <div style="height: 20rem;" id="about-target"></div>
+
+  <div class="about-titl">
+    Did you know? POTANITY
+  </div>
+
+  <div style="height: 10rem;"></div>
+
+  <div class="about-container">
+    <img src="public/potato.png" alr="potato" class="potato-img">
+    <div class="about-text">
+      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem
+      placerat.
+      In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus
+      fringilla
+      lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper
+      vel
+      class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+      Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem
+      placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar
+      vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
+      hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+    </div>
+    <img src="public/unity-logo.png" alt="unity logo" class="unity-logo-img">
+  </div>
+
+  <div style="height: 20rem;" id="contact-target"></div>
+
+  <div class="contact-tit">
+    Welcome to 
+  </div>
+
+  <div style="height: 10rem;"></div>
+
+  <div class="contact-te">
+    contact via Kakao or Everytime
+  </div>
+
+  <script src="app.js"></script>
   <script src="Build/unity-build.loader.js"></script>
   <script>
     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
